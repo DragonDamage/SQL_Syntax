@@ -227,9 +227,10 @@ SELECT
 
 
 
-
-
-
+Табличка + (Syntax)
+| ID | NAME | OLD | COUNTRY |
+| -- | ---- | --- | ------- | 
+| 1  | Andrey| 28 | Russia  | 
 
 
 
