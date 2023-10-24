@@ -273,10 +273,20 @@ SELECT
 ---
 
 
+### Обращаемся к удаленной БД `OPENQUERY`
+```sql
+SELECT * FROM OPENQUERY (BD2,' SELECT * FROM BD2.portal.dbo.types
+WHERE code LIKE "%text%"');
+
+Комментарий:
+--OPENQUERY --Обращение к удаленной БД
+
+'Резюме -- Выбрать всё из таблицы BD2.portal.dbo.types, где code = text', обратившись удаленно из базы в которой находимся в базу данных BD2'
+```
+---
 
 
 
-'Резюме -- Выбрать всё из таблицы Sample, где id = id1, id2, id3
 
 
 
