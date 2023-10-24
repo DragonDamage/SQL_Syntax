@@ -275,8 +275,8 @@ SELECT
 
 ### Обращаемся к удаленной БД `OPENQUERY`
 ```sql
-SELECT * FROM OPENQUERY (BD2,' SELECT * FROM BD2.portal.dbo.types
-WHERE code LIKE "%text%"');
+SELECT * FROM OPENQUERY (BD2,' SELECT * FROM BD2.portal.dbo.types')
+WHERE code LIKE '%text%';
 
 Комментарий:
 --OPENQUERY --Обращение к удаленной БД
