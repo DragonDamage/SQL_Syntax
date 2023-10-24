@@ -275,8 +275,12 @@ SELECT
 
 ### Обращаемся к удаленной БД `OPENQUERY`
 ```sql
+-- 1 вариант (условия снаружи запроса)
 SELECT * FROM OPENQUERY (BD2,' SELECT * FROM BD2.portal.dbo.types')
 WHERE code LIKE '%text%';
+-- 2 вариант (условия внутри запроса - экранирование '')
+SELECT * FROM OPENQUERY (BD2,' SELECT * FROM BD2.portal.dbo.types
+WHERE code LIKE ''%text%'' ');
 
 Комментарий:
 --OPENQUERY --Обращение к удаленной БД
